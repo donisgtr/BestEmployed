@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img alt="Preview" src="![image](https://user-images.githubusercontent.com/14313822/124400050-122df780-dcf6-11eb-8192-92db746e4b6d.png)">
+  ![image](https://user-images.githubusercontent.com/14313822/124400060-2540c780-dcf6-11eb-80c0-53d4569ee958.png)
 </p>
 
 ## ✨ Tecnologias
