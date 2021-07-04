@@ -1,0 +1,12 @@
+{
+  "name": "nlw06-node.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/donisgtr/nlw06-node.js.git",
+  "author": "donissousa <donisgtr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^4.3.5"
+  }
+}
