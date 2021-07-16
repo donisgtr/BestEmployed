@@ -1,6 +1,6 @@
 /* vamos importar as funcoes do typeorm */
 import {Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
-import { } from "uuid"
+import { v4 as uuid } from "uuid"
 
 
 /* o que é uma entidade do nosso projeto? entitidade seria uma tabela usuario */
@@ -8,8 +8,8 @@ import { } from "uuid"
 class User {
 
     /* preciso agora definir as que isso aqui sao colunas, para isso devemos importar. */
-    @Column()
-    id: string;
+    @PrimaryColumn()
+    readonly id: string;
     
     @Column()
     name: string;
@@ -17,11 +17,19 @@ class User {
     @Column()
     email: string;
 
-    @Column()
+    @CreateDateColumn()
     created_at: Date;
 
-    @Column()
+    @UpdateDateColumn()
     updated_at: Date;
+
+    /* o que é um contructor  */
+    constructor() {
+         /* quando estamos acessando o atributo de uma classe usamos o this */
+        if(!this.id) {
+            this.id = uuid();
+        }
+    }
 }
 
 export { User } ; 
